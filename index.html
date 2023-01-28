@@ -7,13 +7,16 @@
     <title>Document</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/mobile.css">
+    <link rel="stylesheet" href="./css/tablet.css">
+    <link rel="stylesheet" href="./css/desktop.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700&display=swap" 
         rel="stylesheet">
 </head>
 <body>
-    <header class="header">
+    <header>
     <!-- <div class="container header-row">
         <nav class="header-navigation">
             <div>
@@ -34,12 +37,12 @@
     </div> -->
     </header>
 <main>
-    <!-- <section class="main">
+    <section class="main">
         <div class="container main-bg">
             <h1 class="header-title">Effective Solutions <br> for Your Business</h1>
             <button class="main-btn" type="button" data-modal-open>Order Service</button>
         </div>
-    </section> -->
+    </section>
     
     <section class="advantages">
         <div class="container">
@@ -54,7 +57,7 @@
                         </svg>
                     </a>
                     <h3 class="middle-title">Strategy</h3>
-                    <p>Our goal is to identify the business problem to walk away with the perfect and creative solution. </p>
+                    <p class="middle-text">Our goal is to identify the business problem to walk away with the perfect and creative solution. </p>
                 </li>
                 <li>
                     <a href="" class="advantages-link">
@@ -63,7 +66,7 @@
                         </svg>
                     </a>
                     <h3 class="middle-title">Punctuality</h3>
-                    <p>Bring the key message to the brand's audience for the best price within the shortest possible time.</p>
+                    <p class="middle-text">Bring the key message to the brand's audience for the best price within the shortest possible time.</p>
                 </li>
                 <li>
                     <a href="" class="advantages-link">
@@ -72,7 +75,7 @@
                         </svg>
                     </a>
                     <h3 class="middle-title">Diligence</h3>
-                    <p>Research and confirm brands that present the strongest digital growth opportunities and minimize risk.</p>
+                    <p class="middle-text">Research and confirm brands that present the strongest digital growth opportunities and minimize risk.</p>
                 </li>
                 <li>
                     <a href="" class="advantages-link">
@@ -81,13 +84,13 @@
                         </svg>
                     </a>
                     <h3 class="middle-title">Technologies</h3>
-                    <p class="middle-item">Design practice focused on digital experiences. We bring forth a deep passion for problem-solving.</p>
+                    <p class="middle-text">Design practice focused on digital experiences. We bring forth a deep passion for problem-solving.</p>
                 </li>
             </ul>
         </div>
     </section>
     
-    <!-- <section class="doing">
+    <section class="doing">
         <div class="container">
             <h2 class="doing-title">What are we doing</h2>
             <ul class="list doing-list">
@@ -102,9 +105,9 @@
                 </li>
             </ul>
         </div>
-    </section> -->
+    </section>
 
-    <!-- <section class="team">
+    <section class="team">
         <div class="container">
             <h2 class="team-title">Our Team</h2>
             <ul class="list team-list">
@@ -250,9 +253,9 @@
                 </li>
             </ul>
         </div>
-    </section> -->
+    </section>
 
-    <!-- <section>
+    <section>
         <div class="container">
             <h2 class="customers-title">
                 Customers
@@ -302,12 +305,12 @@
                 </li>
             </ul>
         </div>
-    </section> -->
+    </section>
     
 </main>
 
     <footer class="footer">
-        <!-- <div class="container footer-list">
+        <div class="container footer-list">
             <section>
                 <a class="footer-logo-part link" href="index.html">WEB<span class="footer-logo">STUDIO</span></a>
                 <p class="footer-text">
@@ -349,9 +352,11 @@
                     </li>
                 </ul>
             </section>
-            <form action="#">
-                <div class="footer-sub">
-                    <label class="footer-soc-title" for="subscribe">Subscribe</label>
+            <section class="footer-sub">
+            <form action="#" class="">
+                <div>
+                    <h2 class="footer-soc-title">Subscribe</h2>
+                    <label class="footer-soc-title" for="subscribe"></label>
                     <div class="sub-list">
                     <input 
                         class="footer-input" 
@@ -360,18 +365,19 @@
                         name="subscribe"
                         required
                         id="subscribe">
-                        <button type="submit" class="sub-btn">
-                            Subscribe
-                            <svg class="tg-icon" width="24" height="20">
-                                <use href="./img/icons.svg#icon-telegram"></use>
-                            </svg>
-                        </button>
                     </div>
+                    <button type="submit" class="sub-btn">
+                        Subscribe
+                        <svg class="tg-icon" width="24" height="20">
+                            <use href="./img/icons.svg#icon-telegram"></use>
+                        </svg>
+                    </button>
                 </div>
             </form>
-        </div> -->
+        </section>
+        </div>
     </footer>
-    <!-- <div class="backdrop is-hidden" data-modal>
+    <div class="backdrop is-hidden" data-modal>
         <div class="modal">
             <button class="modal-close" type="button" data-modal-close>
                 <svg class="close-icon" width="8" height="8">
@@ -448,7 +454,7 @@
                 <button class="send-btn" type="submit"><span class="send-text">Send</span></button>
             </form>
         </div>
-    </div> -->
+    </div>
 
     <script src="./js/modal.js"></script>
 </body>

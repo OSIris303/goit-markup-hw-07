@@ -1,0 +1,13 @@
+@media screen and (max-width: 480px) {
+    .advantages-link {
+        display: none;
+    }
+
+    .doing {
+        display: none;
+    }
+    
+    .footer-input {
+        max-width: 396px;
+    }
+}
