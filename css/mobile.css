@@ -10,4 +10,12 @@
     .footer-input {
         max-width: 396px;
     }
+
+    .header-list {
+        display: none;
+    }
+
+    .address-list {
+        display: none;
+    }
 }

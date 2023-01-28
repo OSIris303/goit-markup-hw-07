@@ -77,7 +77,6 @@ body {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #4D5AE5;
-    margin-right: 77px;
 }
 
 .header-logo-part {
@@ -140,10 +139,11 @@ body {
 }
 
 .header-title {
-    font-size: 56px;
-    line-height: 1.07;
+    font-size: 36px;
+    line-height: 1.11;
     text-align: center;
     letter-spacing: 0.02em;
+    text-transform: capitalize;
     color: #FFFFFF;
     margin-bottom: 48px;
 }
@@ -171,7 +171,7 @@ body {
         linear-gradient(
             rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)
             ), 
-            url(../img/people-office.jpg);
+            url(../img/bg-mob.jpg);
     max-width: 1440px;
     max-height: 600px;
     margin: auto;
