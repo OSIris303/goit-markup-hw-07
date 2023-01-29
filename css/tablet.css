@@ -1,6 +1,6 @@
-@media screen and (min-width: 481px) {
+@media screen and (min-width: 481px) and (max-width: 768px) {
     .container {
-        max-width: 552px ;
+        max-width: 768px ;
     }
 
     .header {
@@ -18,10 +18,6 @@
 
     .header-logo-part {
         margin-right: 120px;
-    }
-
-    .header> .container {
-        max-width: 768px;
     }
 
     .header-contacts {
@@ -85,7 +81,86 @@
         padding-bottom: 96px;
     }
 
-    .middle-item {
+    .middle-list> .container {
+        max-width: 768px;
+    }
 
+    .middle-list {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 72px;
+        column-gap: 24px;
+    }
+
+    .middle-item {
+        width: calc((100% - 54px) / 2);
+    }
+
+    .advantages {
+        padding-top: 96px;
+        padding-bottom: 96px;
+    }
+
+    .team-list {
+        gap: 64px;
+        column-gap: 24px;
+    }
+
+    .team {
+        padding-bottom: 104px;
+    }
+
+
+
+    .team-item {
+        width: 264px;
+        height: 100%;
+    }
+
+    .team-soc-list {
+        margin-left: 16px;
+        margin-right: 16px;
+    }
+
+    .customers-list {
+        margin-bottom: 96px;
+    }
+
+    .footer-soc {
+        width: 208px;
+        margin-left: 24px;
+    }
+
+    .footer-soc-title,
+    .footer-logo-part {
+        justify-content: left;
+    }
+
+    .footer-soc-title {
+        margin-bottom: 16px;
+    }
+
+    .footer-input {
+        width: 264px;
+    }
+
+    .sub-list {
+        display: flex;
+        align-items: center;
+        width: 453px;
+        height: 40px;
+    }
+
+    .sub-btn {
+        margin-left: 24px;
+    }
+
+    .footer-sub {
+        width: 552px;
+    }
+
+    .footer-list {
+        
     }
 }

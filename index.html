@@ -16,8 +16,8 @@
         rel="stylesheet">
 </head>
 <body>
-    <header class="header">
-    <div class="container header-row">
+    <header class="">
+    <div class="header container header-row">
         <nav class="header-navigation">
             <div>
                 <a class="header-logo link" href="index.html">WEB<span class="header-logo-part">STUDIO</span></a>
@@ -361,8 +361,8 @@
 </main>
 
     <footer class="footer">
-        <div class="container footer-list">
-            <section>
+        <div class="footer-list container">
+            <section class="">
                 <a class="footer-logo-part link" href="index.html">WEB<span class="footer-logo">STUDIO</span></a>
                 <p class="footer-text">
                     Increase the flow of customers and <br> 
@@ -404,11 +404,11 @@
                 </ul>
             </section>
             <section class="footer-sub">
-            <form action="#" class="">
-                <div>
+            <!-- <form action="#" class="">
+                <div class="sub-list">
                     <h2 class="footer-soc-title">Subscribe</h2>
                     <label class="footer-soc-title" for="subscribe"></label>
-                    <div class="sub-list">
+                    <div>
                     <input 
                         class="footer-input" 
                         type="email"
@@ -423,6 +423,26 @@
                             <use href="./img/icons.svg#icon-telegram"></use>
                         </svg>
                     </button>
+                </div>
+            </form> -->
+            <form action="#">
+                <div class="footer-sub">
+                    <label class="footer-soc-title" for="subscribe">Subscribe</label>
+                    <div class="sub-list">
+                    <input 
+                        class="footer-input" 
+                        type="email"
+                        placeholder="E-mail"
+                        name="subscribe"
+                        required
+                        id="subscribe">
+                        <button type="submit" class="sub-btn">
+                            Subscribe
+                            <svg class="tg-icon" width="24" height="20">
+                                <use href="./img/icons.svg#icon-telegram"></use>
+                            </svg>
+                        </button>
+                    </div>
                 </div>
             </form>
         </section>

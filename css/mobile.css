@@ -1,4 +1,9 @@
 @media screen and (max-width: 480px) {
+    
+    header> .container {
+        max-width: 480px;
+    }
+
     .advantages-link {
         display: none;
     }
@@ -18,5 +23,13 @@
     .address-list {
         display: none;
     }
-    
+
+    .customers-item {
+        width: 190px;
+    }
+
+    .customers-list {
+        gap: 16px;
+        row-gap: 72px;
+    }
 }
