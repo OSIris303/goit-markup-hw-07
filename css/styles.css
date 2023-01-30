@@ -64,6 +64,7 @@ img {
 }
 
 .header {
+    height: 70px;
     background: #FFFFFF;
     box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 
                 0px 1px 1px rgba(46, 47, 66, 0.16), 
@@ -167,73 +168,7 @@ img {
     color: #404BBF;
 }
 
-.menu-open {
-    stroke: #2E2F42;
-    background-color: transparent;
-    border: none;
-}
 
-.mob-menu {
-    width: 100%;
-    height: 100%;
-    background-color: #ffffff;
-    position: fixed;
-    top: 0;
-}
-
-.mob-list {
-    padding-top: 80px;
-    padding-left: 40px;
-    display: flex; 
-    flex-direction: column;
-    gap: 40px;
-}
-
-.mob-link {
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.11;
-    letter-spacing: 0.02em;
-    text-transform: capitalize;
-    color: #2E2F42;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.mob-link:hover, 
-.mob-link:focus {
-    color: #404BBF;
-}
-
-.mob-address-list {
-    padding-left: 40px;
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
-    margin-top: 284px;
-    margin-bottom: 48px;
-}
-
-.mob-item {
-    font-weight: 600;
-    font-size: 36px;
-    line-height: 1.11;
-    text-transform: capitalize;
-    color: #4D5AE5;
-}
-
-.mob-mail {
-    font-size: 20px;
-    line-height: 1.20;
-    letter-spacing: 0.02em;
-    color: #434455;
-    margin-top: 40px;
-}
-
-.mob-soc-list {
-    display: flex;
-    justify-content: center;
-    gap: 56px;
-}
 
 
 /*---------MAIN----------*/
@@ -381,7 +316,7 @@ img {
     background: #F4F4FD;
     padding-top: 96px;
     padding-bottom: 72px;
-
+    max-width: 428px;
 }
 
 .team-title {
@@ -923,10 +858,6 @@ img {
     margin-bottom: 16px;
 }
 
-.modal-form {
-
-}
-
 .modal-input {
     color: black;
     width: 100%;
@@ -947,10 +878,6 @@ img {
 
 .modal-input:focus + .input-icon {
     fill: #4D5AE5;
-}
-
-.modal-icon {
-    
 }
 
 .send-btn {
@@ -1056,5 +983,103 @@ img {
     width: 105px;
 }
 
-/*---------MEDIA----------*/
+.header-list,
+.address-list,
+.advantages-link,
+.doing {
+    display: none;
+}
+
+/*---------MOB-MENU----------*/
+
+.mob-close {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    top: 24px;
+    right: 24px;
+    background: #E7E9FC;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+                background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    cursor: pointer;
+}
+.menu-open {
+    stroke: #2E2F42;
+    background-color: transparent;
+    border: none;
+}
+
+.mob-menu {
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff;
+    position: fixed;
+    top: 0;
+}
+
+.mob-list {
+    padding-top: 80px;
+    padding-left: 25px;
+    display: flex; 
+    flex-direction: column;
+    gap: 40px;
+}
+
+.mob-link {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    color: #2E2F42;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.mob-link:hover, 
+.mob-link:focus {
+    color: #404BBF;
+}
+
+.mob-address-list {
+    padding-left: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin-top: 84px;
+    margin-bottom: 48px;
+}
+
+.mob-item {
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 1.11;
+    text-transform: capitalize;
+    color: #4D5AE5;
+}
+
+.mob-mail {
+    font-size: 20px;
+    line-height: 1.20;
+    letter-spacing: 0.02em;
+    color: #434455;
+    margin-top: 40px;
+}
+
+.mob-soc-list {
+    display: flex;
+    justify-content: center;
+    gap: 56px;
+    margin-bottom: 40px;
+}
+
+.mob-menu > .container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: auto;
+}
+
 

@@ -1,10 +1,10 @@
-@media screen and (min-width: 481px) and (max-width: 768px) {
+@media screen and (min-width: 768px) {
     .container {
         max-width: 768px ;
     }
 
     .header {
-        padding-bottom: 10px;
+        height: 70px;
     }
 
     .doing,
@@ -16,8 +16,8 @@
         display: none;
     }
 
-    .header-logo-part {
-        margin-right: 120px;
+    .header-list {
+        display: flex;
     }
 
     .header-contacts {
@@ -28,18 +28,21 @@
     }
 
     .address-list {
+        display: flex;
         flex-wrap: wrap;
-        gap: 4px;
+        gap: 0;
         width: 119px;
         margin-right: 15px;
     }
 
     .header-link.current::after {
-        bottom: -18px;
+        bottom: -25px;
     }
 
     .header-list {
         height: 24px;
+        margin-left: 120px;
+        margin-right: 119px;
     }
 
     .main {
@@ -54,6 +57,7 @@
     .header-title {
         font-size: 56px;
         line-height: 60px;
+        margin-bottom: 40px;
     }
 
     .main-btn {
@@ -61,14 +65,10 @@
         line-height: 1.50;
     }
 
-    .header-title {
-        margin-bottom: 40px;
-    }
-
     @media (min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
-  .main {
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+    .main {
     background-image:
     linear-gradient(
             rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)
@@ -76,13 +76,13 @@
         }
     }
 
+    .modal {
+        max-width: 408px;
+    }
+
     .advantages {
         padding-top: 96px;
         padding-bottom: 96px;
-    }
-
-    .middle-list> .container {
-        max-width: 768px;
     }
 
     .middle-list {
@@ -94,12 +94,7 @@
     }
 
     .middle-item {
-        width: calc((100% - 54px) / 2);
-    }
-
-    .advantages {
-        padding-top: 96px;
-        padding-bottom: 96px;
+        width: 356px;
     }
 
     .team-list {
@@ -125,6 +120,12 @@
 
     .customers-list {
         margin-bottom: 96px;
+        width: 552px;
+        margin-left: 93px;
+    }
+
+    .customers-link {
+        width: 168px;
     }
 
     .footer-soc {
@@ -161,6 +162,15 @@
     }
 
     .footer-list {
-        
+        justify-content: left;
+        padding-left: 108px;
+    }
+
+    .main {
+        max-width: 768px;
+    }
+
+    .middle-title {
+        text-align: start;
     }
 }
