@@ -316,7 +316,7 @@ img {
     background: #F4F4FD;
     padding-top: 96px;
     padding-bottom: 72px;
-    max-width: 428px;
+    max-width: 100%;
 }
 
 .team-title {

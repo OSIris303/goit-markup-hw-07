@@ -3,8 +3,8 @@
         max-width: 1440px;
     }
 
-    .header {
-        max-width: 1440px;
+    .header-row {
+
         padding-left: 156px;
         padding-right: 156px;
     }
@@ -24,8 +24,8 @@
         linear-gradient(
             rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)
             ),  url(../img/bg.jpg);
-        padding-top: 112px;
-        padding-bottom: 108px;
+        padding-top: 188px;
+        padding-bottom: 188px;
     }
 
     @media (min-device-pixel-ratio: 2),
@@ -103,9 +103,14 @@
         margin-left: auto;
         width: 100%;
         gap: 24px;
+        margin-bottom: 120px;
     }
 
     .footer-sub {
         width: auto;
+    }
+
+    .customers-title {
+        margin-top: 120px;
     }
 }
