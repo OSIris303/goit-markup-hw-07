@@ -113,4 +113,9 @@
     .customers-title {
         margin-top: 120px;
     }
+
+    .footer-text,
+    .footer-soc-list {
+        margin-bottom: 0;
+    }
 }
